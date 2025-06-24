@@ -1,45 +1,57 @@
-<div class="hero">
-  Anderson Lab @ UC Berkeley  
-  <br />
-  Engineering Biology for the Future
+<div class="hero full-bleed">
+  <h1>Anderson Lab<br>at UC Berkeley</h1>
+  <p>Advancing synthetic biology through computational design and experimental precision</p>
 </div>
 
-## Welcome
+<section style="padding: 2rem; background-color: #ffffff;">
+  <p>
+    Welcome to the Anderson Lab at the University of California, Berkeley. We specialize in 
+    <strong>synthetic biology</strong>, combining cutting-edge experimental techniques with advanced 
+    computational tools to engineer biological systems for real-world applications in health, sustainability, and biotechnology.
+  </p>
 
-Welcome to the Anderson Lab website at the University of California, Berkeley. We specialize in **synthetic biology**, combining cutting-edge experimental techniques with advanced computational tools to engineer biological systems with precision and purpose.
+  <div style="display: flex; flex-wrap: wrap; gap: 3rem; margin-top: 2rem;">
+    <div style="flex: 1; min-width: 250px;">
+      <h2>About the Lab</h2>
+      <p>Our research spans:</p>
+      <ul>
+        <li>Genetic Design Automation</li>
+        <li>Therapeutic Bacteria Engineering</li>
+        <li>BioCAD Software Development</li>
+        <li>DNA Fabrication Technologies</li>
+        <li>Synthetic Biocontainment Systems</li>
+      </ul>
+    </div>
 
-## About the Lab
+    <div style="flex: 1; min-width: 250px;">
+      <h2>Recent Highlights</h2>
+      <ul>
+        <li>Developed ligand-dependent synthetic auxotrophs for biosafety</li>
+        <li>Commercialized technologies via Synvivia and 20n</li>
+        <li>Published in <em>ACS Synth Biol</em>, <em>Nature Biotech</em>, and <em>PNAS</em></li>
+      </ul>
+    </div>
+  </div>
 
-Led by Professor J. Christopher Anderson, our lab focuses on areas such as:
+  <div style="display: flex; flex-wrap: wrap; gap: 3rem; margin-top: 2rem;">
+    <div style="flex: 1; min-width: 250px;">
+      <h2>Opportunities</h2>
+      <p>We welcome:</p>
+      <ul>
+        <li>Undergraduate researchers</li>
+        <li>Master of Engineering (MEng) students</li>
+        <li>PhD students and postdocs</li>
+        <li>Visiting scholars</li>
+      </ul>
+      <p>Learn more in our <a href="teaching/bioe134.md">Teaching</a> and <a href="research/projects.md">Research</a> sections.</p>
+    </div>
 
-- Genetic Design Automation
-- Therapeutic Bacteria Engineering
-- BioCAD Software Tools
-- DNA Fabrication Methods
-- Synthetic Biocontainment Strategies
-
-We develop foundational technologies to advance synthetic biology, and apply these tools to problems in health, sustainability, and biotechnology.
-
-## Opportunities
-
-We provide hands-on research training and mentorship for:
-
-- Undergraduate researchers
-- Master of Engineering (MEng) students
-- PhD students and postdocs
-- Visiting scholars
-
-Learn more in the [Teaching](teaching/bioe134.md) and [Research](research/projects.md) sections.
-
-## Recent Highlights
-
-- **Biosafety:** Development of ligand-dependent synthetic auxotrophs  
-- **Translation:** Commercialization through Synvivia and 20n  
-- **Publications:** Featured in *ACS Synth Biol*, *Nature Biotech*, and *PNAS*
-
-## Get in Touch
-
-To learn more or inquire about joining the lab, visit the [Bio](bio/profile.md) section or email Prof. Anderson at `JCAnderson at berkeley dot edu`.
-
----
-© 2025 University of California, Berkeley
+    <div style="flex: 1; min-width: 250px;">
+      <h2>Get in Touch</h2>
+      <p>
+        Interested in joining the lab? Visit the <a href="bio/profile.md">Bio</a> section or contact 
+        Prof. Anderson at <code>JCAnderson at berkeley dot edu</code>.
+      </p>
+    </div>
+  </div>
+</section>

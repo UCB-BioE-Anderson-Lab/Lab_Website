@@ -1,18 +1,22 @@
 site_name: Anderson Lab @ UC Berkeley
 site_url: https://UCB-BioE-Anderson-Lab.github.io/
-repo_url: https://github.com/UCB-BioE-Anderson-Lab/UCB-BioE-Anderson-Lab.github.io
 
 theme:
   name: material
   logo: images/logo.png
+  icon:
+    repo: null
   features:
-    - navigation.tabs
-    - navigation.top
     - content.code.annotate
-    - toc.follow
-    - header.autohide
     - search.suggest
     - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 
 nav:
   - Home: index.md
@@ -34,3 +38,14 @@ plugins:
 
 extra_css:
   - css/custom.css
+
+extra:
+  page:
+    '*':
+      hide:
+        - navigation
+        - toc
+        - footer
+  social: []
+  generator: false
+  copyright: '© 2025 University of California, Berkeley'

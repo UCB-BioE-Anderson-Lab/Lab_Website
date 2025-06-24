@@ -1,12 +1,18 @@
 /* Custom CSS for Cloning Tutorials */
 
+:root {
+    --berkeley-blue: #003262;
+    --founders-rock: #3B7EA1;
+    --gray-100: #f5f5f5;
+}
+
 /* Import a clean serif font for headings */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 /* General Styling */
 body {
     background-color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     background: linear-gradient(to bottom, #f5f7fa, #ffffff);
     line-height: 1.6;
     color: #333;
@@ -15,10 +21,16 @@ body {
 
 /* Header Styles */
 .md-header {
-    background-color: #00274C;
-    border-bottom: 3px solid #FDB515;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 6px 10px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: none;
+    box-shadow: none;
+    padding: 0 1.5rem;
 }
 
 .md-header__inner {
@@ -30,16 +42,16 @@ body {
 }
 
 .md-header__title {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: #FDB515;
-    font-size: 24px;
-    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--berkeley-blue);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
     color: #222;
-    font-family: 'Merriweather', serif;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
     font-weight: bold;
     margin-top: 1.4em;
     margin-bottom: 0.6em;
@@ -140,56 +152,149 @@ button:hover {
     z-index: 10;
 }
 
-/* Progress Panel Button Styles */
-.md-header .progress-panel button {
-    background-color: #d8edfa;
-    color: #0088ca;
-    border: 1px solid #0088ca;
-    padding: 6px 10px;
-    font-size: 14px;
-    margin-left: 8px;
-}
-
-.md-header .progress-panel button:hover {
-    background-color: #b3f7ff;
-}
-
-/* Results Feedback */
-/* p#reverseCompResult, p#transcriptionResult, p#translateResult {
-    font-weight: bold;
-    margin-top: 10px;
-} */
-
 /* Footer Styles */
 .md-footer-meta {
-    background-color: #0088ca;
-    color: #ffffff;
+    background-color: white;
+    color: var(--berkeley-blue);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     padding: 10px 20px;
-}
-
-.md-footer-meta::before {
-    content: "© 2025 University of California, Berkeley";
-    display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 5px;
+    border-top: 1px solid #ccc;
+    text-align: center;
 }
 
 .md-footer-meta .md-footer-meta__inner {
-    display: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section {
+    padding: 3rem 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .hero {
-    background: url('/img/berkeley-campus.jpg') center/cover no-repeat;
-    padding: 60px 20px;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-    font-family: 'Merriweather', serif;
-    font-size: 2rem;
+    position: relative;
+    background: url('../images/ucb_photo.jpg') center/cover no-repeat;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border-radius: 6px;
-    margin-bottom: 30px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    z-index: 0;
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    margin: 0.5rem;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .md-header__title {
+        font-size: 20px;
+    }
+}
+/* Offset main content from fixed header */
+/* Offset main content from fixed header */
+.md-main {
+    margin-top: 48px;
+}
+
+/* Navigation Bar Styles */
+.md-tabs {
+    position: sticky;
+    top: 48px;
+    background-color: white;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0 1.5rem;
+    height: 36px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.md-header__inner {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.md-tabs__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.md-tabs__item {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--berkeley-blue);
+    border-bottom: 2px solid transparent;
+    padding: 0.25rem 0.5rem;
+}
+
+.md-tabs__item--active {
+    border-bottom: 2px solid var(--berkeley-blue);
+}
+
+.md-tabs__item:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
