@@ -49,3 +49,5 @@ extra:
   social: []
   generator: false
   copyright: '© 2025 University of California, Berkeley'
+extra_javascript: []
+extra_templates: []
