@@ -1,6 +1,6 @@
 # Publications
 
-The Anderson Lab develops tools and strategies to make biology more engineerable, combining computational modeling with synthetic biology wetlab research. This list of publications reflects work on enzyme specificity prediction, biological design validation, and optimization strategies. It also includes foundational contributions to unnatural amino acid incorporation, biosafety systems, and standards in biological design automation.
+The Anderson Lab develops tools and strategies to make biology more engineerable, combining computational modeling with synthetic biology wetlab research. This list of publications reflects work on enzyme specificity prediction, biological design validation, and optimization strategies. It also includes foundational contributions by the PI to unnatural amino acid incorporation during graduate work, as well as lab-driven advances in biosafety systems and standards in biological design automation.
 
 ---
 
