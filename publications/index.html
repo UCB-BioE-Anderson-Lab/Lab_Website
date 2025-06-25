@@ -540,8 +540,8 @@ function renderEntries(entries, containerId) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   const [papers, patents] = await Promise.all([
-    fetchYAML("/data/papers.yml"),
-    fetchYAML("/data/patents.yml"),
+    fetchYAML("/Lab_Website/data/papers.yml"),
+    fetchYAML("/Lab_Website/data/patents.yml"),
   ]);
   renderEntries(papers, "publications-list");
   renderEntries(patents, "patents-list");
