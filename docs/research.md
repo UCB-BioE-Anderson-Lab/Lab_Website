@@ -45,7 +45,7 @@ This course is for students who want a deeper, more applied experience with mole
 **Prerequisites**: CS 61A or E7, and BioE11 or Bio1A  
 
 **About the Course**  
-Biodesign Automation is a hands-on coding course focused on applying computer science to real problems in synthetic biology. Students build original Python-based tools, rather than relying on existing platforms, to automate tasks like cloning, gene design, and biosynthetic pathway construction. The course helps students connect their biology and chemistry background with programming skills, using platforms like Google Colab and GitHub. Students are introduced to language models such as ChatGPT to assist with coding and explore both the current landscape of biodesign software and the areas where new tools are still needed.
+Biodesign Automation is a hands-on coding course focused on applying computer science to real problems in synthetic biology. Students build original Python-based tools—rather than using existing platforms—to automate tasks like cloning, gene design, and biosynthetic pathway construction. The course helps students connect their biology and chemistry background with programming skills, using platforms like Google Colab and GitHub. Students are introduced to language models such as ChatGPT to assist with coding, and explore both the current landscape of biodesign software and the areas where new tools are still needed.
 
 **Why Take It?**  
 This course is for students who want to gain real programming experience while working on meaningful biology problems. It emphasizes integration: combining biological insight with computational thinking, and building tools that reflect the needs and workflows of experimental biologists. Through a mix of structured assignments and a culminating team project, students learn how to turn scientific ideas into functioning software.
@@ -74,4 +74,4 @@ The program is structured to support students at every level. New members enter 
 - Supports both experimental and computational biology pathways  
 - Offers one of the largest and most diverse research training pipelines in the college  
 - Concludes with team presentations at the Bay Area Bioengineering Symposium (BABS)  
-- Includes research that has led to publication, such as: Lim et al., "Interpreting biochemical text with language models" (2025) [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.05.15.654376v1.full)
+- Includes research that has led to publication, such as: Lim et al., "Interpreting biochemical text with language models" (2025) [bioRxiv](https://doi.org/10.1101/2025.05.15.654376v1)

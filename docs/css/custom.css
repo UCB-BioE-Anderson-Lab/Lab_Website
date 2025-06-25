@@ -114,43 +114,34 @@ button:hover {
     background-color: #0077aa;
 }
 
-/* Search Box and Header Button Styles */
-.md-search {
-    position: absolute;
-    top: -10px;
-    right: 290px;
-    width: 260px;
-    height: 40px;
-}
 
-.md-search__icon {
-    position: absolute;
-    top: 2px;
-    color: #ffffff;
-    font-size: 18px;
+/* Search Box and Header Button Styles */
+.md-search__form {
+    background-color: white;
+    border: 2px solid var(--berkeley-blue);
+    border-radius: 4px;
+    padding: 4px 8px;
+    box-shadow: none;
+    margin-top: -3px;
 }
 
 .md-search__input {
-    position: absolute;
-    top: 2px;
-    left: 35px;
-    height: 26px;
-    width: 185px;
-    border-radius: 4px;
+    background-color: white;
     border: none;
-    background-color: #ffffff;
-    color: #333;
-    font-size: 14px;
+    outline: none;
+    color: var(--berkeley-blue);
+    font-family: inherit;
 }
 
-/* Dropdown Panel Styles */
-.md-search__output {
-    position: absolute;
-    top: 90%;
-    left: 8px;
-    width: calc(100% - 16px);
-    z-index: 10;
+.md-search__input::placeholder {
+    color: var(--berkeley-blue);
+    opacity: 1;
 }
+
+.md-search__icon {
+    color: var(--berkeley-blue);
+}
+
 
 /* Footer Styles */
 .md-footer-meta {
@@ -297,4 +288,27 @@ img {
 .md-tabs__item:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* Hide dark mode toggle icon */
+form[data-md-component="palette"] {
+    display: none !important;
+  }
+
+.md-header__title a img {
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+/* Remove underline or border from the logo's anchor link directly */
+.md-header__title a {
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+/* Prevent hyperlinks from adding underline or border styles to images */
+a img {
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
 }
